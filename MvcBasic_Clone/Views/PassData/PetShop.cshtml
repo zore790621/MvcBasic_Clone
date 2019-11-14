@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "PetShop";
+}
+
+<h2>PetShop</h2>
+
+公司名稱：@ViewData["Company"]
+<br />
+公司地址：@ViewBag
+<br />
+
+@foreach (var item in ViewData.Model)
+{
+    <p>@item</p>
+}
